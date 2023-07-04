@@ -1,0 +1,643 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>product details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!--slick min css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="assets/css/font.awesome.css">
+    <!--ionicons min css-->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="assets/css/slinky.menu.css">
+    <!--plugins css-->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--modernizr min js here-->
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body > 
+
+
+    <header>
+        <div class="main_header sticky-header">
+            <div class="container-fluid">
+                <div class="header_container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!--main menu start-->
+                            <div class="main_menu menu_center menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">home<i class="fa fa-angle-down"></i></a>
+
+                                        </li>
+                                        <li class="mega_items"><a class="active" href="shop.html">shop<i
+                                                    class="fa fa-angle-down"></i></a>
+
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>product details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+    <div id="app">
+    <!--product details start-->
+    <div class="product_details mt-100 mb-100" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-details-tab" >
+                        <div id="img-1" class="zoomWrapper single-zoom">
+                            <a href="#">
+                                <img id="zoom1" :src=imgs[0]
+                                    :data-zoom-image=imgs[0] alt="big-1">
+                            </a>
+                        </div>
+                        <div class="single-zoom-thumb" >
+                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01"  >
+                                <li  v-for="(item,index) in imgs">
+                                
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                    :data-image=item
+                                    :data-zoom-image=item>
+                                    <img :src=item alt="zo-th-1" />
+                                </a>
+
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product_d_right">
+                        <form action="#">
+
+                            <h1><a href="#">{{name}}</a></h1>
+                            <div class="product_nav">
+
+                            </div>
+
+                            <div class="price_box">
+                                <span class="current_price">US$100~140/CBM, FOB Qingdao</span>
+
+
+                            </div>
+                            <div class="product_desc">
+                                <p>Anxumu’s cooling pads are designed adjusting indoor humidity .Made using the latest
+                                    high polymer material and
+                                    advanced cross-linking technique, they offer the advantages of high water
+                                    absorption,
+                                    great water resistance, mildew resistance, mildew resistance, long life, and super
+                                    cooling efficiency. </p>
+                            </div>
+                            <div class="product_variant color">
+
+                            </div>
+                            <div class="product_variant quantity">
+
+                                <button class="button" type="submit">Email us</button>
+
+                            </div>
+
+                            <div class="product_meta">
+                                <span>Brand: <a href="#">Anxumu/OEM</a></span> <br>
+                                <span>Payment terms: <a href="#">TT, LC, West Union</a></span><br>
+                                <span>Delivery terms: <a href="#">FOB, CIF, CFR</a></span><br>
+                                <span>Min. Order: <a href="#">1*20GP container</a></span><br>
+                                <span>Delivery time: <a href="#">7~15 days</a></span><br>
+                            </div>
+
+                        </form>
+                        <div class="priduct_social">
+                            <ul>
+                                <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i>
+                                        Like</a></li>
+                                <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i> tweet</a>
+                                </li>
+                                <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest"></i>
+                                        save</a></li>
+                                <li><a class="google-plus" href="#" title="google +"><i class="fa fa-google-plus"></i>
+                                        share</a></li>
+                                <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin"></i>
+                                        linked</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product details end-->
+   
+    <!--product info start-->
+    <div class="product_d_info mb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_d_inner">
+                        <div class="product_info_button">
+                            <ul class="nav" role="tablist">
+                                <li>
+                                    <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info"
+                                        aria-selected="false">Description</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet"
+                                        aria-selected="false">Specification</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel">
+                                <div class="product_info_content">
+                                    <p> Anxumu's evaporative cooling pad is used in systems where high efficiency
+                                        cooling is required. It can be used for many different cooling purposes but is
+                                        particularly suitable for cooling of livestock buildings and greenhouses when
+                                        higher air velocity is required.
+                                    </p>
+                                    <p> The evaporative cooling pad consists of specially impregnated and corrugated
+                                        cellulose paper sheets with different flute angles, that have been bonded
+                                        together. This unique design yields a cooling pad with high evaporation
+                                        efficiency while still operating at a very low pressure drop.
+                                    </p>
+                                    <p> The water flows down the corrugated surface of the evaporative cooling pad. Part
+                                        of the water is evaporated by the warm and dry air that passes through the pad.
+                                        The rest of the water assists in washing the pad, and is drained back to the
+                                        pump station through a gutter system.
+                                    </p>
+                                    <p> The heat that is needed for the evaporation is taken from the air itself. The
+                                        air that leaves the pad is therefore cooled and humidified simultaneously
+                                        without any external energy supply for the evaporation process. This is nature's
+                                        own cooling process
+                                    </p>
+                                    <div class="banner_area home1_banner mb-95">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-3 col-sm-3 col-8">
+                                                    <figure class="single_banner">
+                                                        <div class="banner_thumb">
+                                                            <img src="assets/img/detail/1.jpg" alt=""></a>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-lg-4 col-md-3 col-sm-3 col-8">
+                                                    <figure class="single_banner">
+                                                        <div class="banner_thumb">
+                                                            <img src="assets/img/detail/2.jpg" alt=""></a>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-lg-4 col-md-3 col-sm-3 col-8">
+                                                    <figure class="single_banner">
+                                                        <div class="banner_thumb">
+                                                            <img src="assets/img/detail/3.jpg" alt=""></a>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sheet" role="tabpanel">
+                                <div class="product_d_table">
+                                    <h2>Technial parameter</h2>
+                                    <form action="#">
+                                        <table>
+                                            <tr>
+                                                <td>Thickness</td>
+                                                <td>Wind speed</td>
+                                                <td>0.6 </td>
+                                                <td>0.8</td>
+                                                <td>1.0</td>
+                                                <td>1.2</td>
+                                                <td>1.4</td>
+                                                <td>1.6</td>
+                                                <td>1.8</td>
+                                                <td>2.0 </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">100mm</td>
+                                                <td>Pressure drop</td>
+                                                <td>7.0</td>
+                                                <td>8.0</td>
+                                                <td>11.0</td>
+                                                <td>16.0</td>
+                                                <td>20.0</td>
+                                                <td>24.0</td>
+                                                <td>28.0</td>
+                                                <td>35.0 </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>Efficiency</td>
+                                                <td>82.0</td>
+                                                <td>80.0</td>
+                                                <td>78.3</td>
+                                                <td>76.5</td>
+                                                <td>74.9</td>
+                                                <td>73.3</td>
+                                                <td>72.0</td>
+                                                <td>70.8 </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">150mm</td>
+                                                <td>Pressure drop</td>
+                                                <td>10.0</td>
+                                                <td>13.0</td>
+                                                <td>18.0</td>
+                                                <td>23.0</td>
+                                                <td>30.0</td>
+                                                <td>38.0</td>
+                                                <td>45.0</td>
+                                                <td>54.4 </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>Efficiency</td>
+                                                <td>92.5</td>
+                                                <td>91.3</td>
+                                                <td>9</td>
+                                                <td>88.7</td>
+                                                <td>87.5</td>
+                                                <td>86.5</td>
+                                                <td>85.4</td>
+                                                <td>84.5</td>
+                                            </tr>
+                                        </table>
+
+
+                                    </form>
+                                </div>
+                                <div class="product_info_content">
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-3 col-sm-3 col-8">
+
+                                        <div class="banner_thumb">
+                                            <img src="assets/img/detail/4.jpg" alt=""></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_d_table col-lg-8 col-md-6 col-sm-6 col-16">
+                                        <br>
+                                        <br>
+                                        <form action="#">
+                                            <table>
+                                                <tr>
+                                                    <td>Model</td>
+                                                    <td>7090</td>
+                                                    <td>7060</td>
+                                                    <td>5090</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>H(height) mm</td>
+                                                    <td>1500,1800,2000</td>
+                                                    <td>1500,1800,2000</td>
+                                                    <td>1500,1800,2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>W(width) mm</td>
+                                                    <td>900,600,300</td>
+                                                    <td>900,600,300</td>
+                                                    <td>900,600,300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>D(thickness) mm</td>
+                                                    <td>100,150,200</td>
+                                                    <td>100,150,200</td>
+                                                    <td>100,150,200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>H(height of flute) mm</td>
+                                                    <td>7</td>
+                                                    <td>6</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>a (angle of flute)</td>
+                                                    <td>45</td>
+                                                    <td>45</td>
+                                                    <td>45</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b (angle of flute)</td>
+                                                    <td>45</td>
+                                                    <td>15</td>
+                                                    <td>45</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">* the size can be customized as client’s requirement
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product info end-->
+
+    <!--product area start-->
+    <section class="product_area related_products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2>Related <span>Products</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <!-- // ============================================= -->
+                <div class="product_carousel product_column4 owl-carousel" >
+                    <div class="col-lg-3" v-for="(item,index) in product">
+                        <article class="single_product" >
+                            <figure>
+                                <div class="product_thumb">
+                                    <div class="label_product">
+                                        <span class="label_new">new</span>
+                                    </div>
+                                    <a class="primary_img" :href=item.url><img
+                                            :src=item.images[0] alt=""></a>
+                                            <a class="secondary_img" :href=item.url><img
+                                                :src=item.images[1] alt=""></a>
+                                </div>
+                                <figcaption class="product_content">
+                                  
+                                    <h4 class="product_name"><a :href=item.url>{{item.name}}</a></h4>
+                                    <div class="price_box">
+                                        <span class="current_price">$142.00</span>
+                                        <span class="old_price">$173.00</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                  
+                   
+                  <!-- // ===================================== -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--product area end-->
+</div>
+
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-10 col-sm-12">
+                        <div class="widgets_container footer_contact">
+                            <h3>Information</h3>
+                            <p>Anxumu cooling treatment systems (Tianjin) Co.,Ltd
+
+                            </p>
+                            <p><i class="icon icon-Pointer"></i>Qinghu Industrial Area, Hexi District, Tianjin, China
+                            </p>
+                            <p><i class="icon icon-Phone"></i>+86 138 1134 6714</p>
+                            <p><i class="icon icon-Mail"></i>sarahma@anxumu.ntesmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-18 col-sm-36">
+                        <div class="widgets_container footer-linkup">
+                            <h3>About us</h3>
+                            <p>Anxumu cooling treatment systems (Tianjin)Co.,Ltd is a professional manufacturer of
+                                climate controlling system on ventilation fans and evaporative cooling cellulose pads
+                                wet curtains in China. It is a high-tech ODM & OEM company that has a completed set of
+                                specialized designing, manufacturing, installation, marketing, and after-sale service,
+                                and now, it has been a well-known company in the field of cooling and humidifying
+                                solutions all over the world through over 10 years' hard-working efforts.
+                                Our products are widely used in agriculture and industry′s ventilation, cooling system.
+                                Application for Animal husbandry, poultry house, livestock breeding, flowers and plants,
+                                greenhouse, factory workshop, textile, chemical, medicine, tea, vegetable storage and
+                                supermarket.
+                                We sincerely want to supply you with high quality products and perfect service based on
+                                our most efficient management and professional work teams.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p>Copyright &copy; 2020.Company name All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_social">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+
+
+    <!-- JS
+============================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+
+      const  products = [{
+        "name": "Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System",
+        "images": [
+            "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/11.jpg",
+            "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/27.jpg",
+            "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/31.jpg",
+            "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/32.jpg"
+        ],
+        "type": "fan",
+        "url": "product-details-fan.html?name=Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System&imgs=['assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/11.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/27.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/31.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/32.jpg']"
+    },
+    {
+        "name": "Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan",
+        "images": [
+            "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/1.jpg",
+            "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/19.jpg",
+            "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/2.jpg",
+            "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/22.jpg"
+        ],
+        "type": "fan",
+        "url": "product-details-fan.html?name=Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan&imgs=['assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/1.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/19.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/2.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/22.jpg']"
+    },
+    {
+        "name": "Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation",
+        "images": [
+            "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg",
+            "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg",
+            "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/24.jpg",
+            "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/29.jpg"
+        ],
+        "type": "fan",
+        "url": "product-details-fan.html?name=Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation&imgs=['assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/24.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/29.jpg']"
+    }, {
+        "name": "Brown Evaporative Cooling Pad Wall for Greenhouse",
+        "images": [
+            "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/11.jpg",
+            "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/14.jpg",
+            "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/29.jpg",
+            "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/9.jpg"
+        ],
+        "type": "pad",
+        "url": "product-details-pad.html?name=Brown Evaporative Cooling Pad Wall for Greenhouse&imgs=['assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/11.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/14.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/29.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/9.jpg']"
+    },
+    {
+        "name": "Colorful Evaporative Cooling Pad (Brown, Green and Black Color)",
+        "images": [
+            "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/17.jpg",
+            "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/18.jpg",
+            "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/19.jpg",
+            "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/24.jpg"
+        ],
+        "type": "pad",
+        "url": "product-details-pad.html?name=Colorful Evaporative Cooling Pad (Brown, Green and Black Color)&imgs=['assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/17.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/18.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/19.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/24.jpg']"
+    },
+    {
+        "name": "Double Color Evaporative Cooling Pad for Greenhouse and Poultry",
+        "images": [
+            "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/1.jpg",
+            "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/36.png",
+            "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/8.jpg"
+        ],
+        "type": "pad",
+        "url": "product-details-pad.html?name=Double Color Evaporative Cooling Pad for Greenhouse and Poultry&imgs=['assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/1.jpg', 'assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/36.png', 'assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/8.jpg']"
+    }];
+        // 使用httpVueLoader
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        img_arr=urlParams.get('imgs')
+        const arr_str = img_arr.replace(/'/g, '"');
+        const imgs=JSON.parse(arr_str);
+        console.log( imgs); 
+        new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    product: products,
+                    imgs: imgs,
+                    name:name
+                }
+            }
+        })
+    </script>
+    <!--jquery min js-->
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="assets/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="assets/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="assets/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
