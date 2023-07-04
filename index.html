@@ -41,7 +41,7 @@
 </head>
 
 <body>
-
+<div  id="app">
     <!--header area start-->
 
     <!--offcanvas menu area start-->
@@ -312,191 +312,35 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="product_carousel product_column4 owl-carousel">
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <div class="label_product">
-                                        <span class="label_new">new</span>
-                                       
-                                    </div>
-                                    <a class="primary_img" href="product-details-fan.html"><img
-                                            src="assets/img/product/product7.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details-fan.html"><img
-                                            src="assets/img/product/product9.jpg" alt=""></a>
-
-                                </div>
-                                <figcaption class="product_content">
-                                    <div class="product_rating">
-                                        <ul>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details-fan.html"> Cooling Fan Push Pull Type Exhaust Fan for Poultry Farm/Greenhouse</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">$220.00</span>
-                                        <span class="old_price">$240.00</span>
-                                    </div>
-                                 
-                                
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <div class="label_product">
-                                        <span class="label_new">new</span>
-                                       
-                                    </div>
-                                    <a class="primary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
-
-                                </div>
-                                <figcaption class="product_content">
-                                    <div class="product_rating">
-                                        <ul>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details-pad.html"> Corrugated evaporative cooling pad for husbandry house, layer house, swine house</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">US$100~140/CBM</span>
-                                    </div>
-                                   
-                                   
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <article class="single_product">
+            <div class="row" >
+                <!-- // ============================================= -->
+                <div class="product_carousel product_column4 owl-carousel" >
+                    <div class="col-lg-3" v-for="(item,index) in product">
+                        <article class="single_product" >
                             <figure>
                                 <div class="product_thumb">
                                     <div class="label_product">
                                         <span class="label_new">new</span>
                                     </div>
-                                    <a class="primary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product3.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product4.jpg" alt=""></a>
-
+                                    <a class="primary_img" :href=item.url><img
+                                            :src=item.images[0] alt=""></a>
+                                            <a class="secondary_img" :href=item.url><img
+                                                :src=item.images[1] alt=""></a>
                                 </div>
                                 <figcaption class="product_content">
-                                    <div class="product_rating">
-                                        <ul>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details-pad.html">Evaporative Cooling Pad for Greenhouse Cooling System of Poultry Farm</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">US$100~140/CBM</span>
-                                        
-                                    </div>
                                   
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <div class="label_product">
-                                        <span class="label_new">new</span>
-                                       
-                                    </div>
-                                    <a class="primary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product5.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details-pad.html"><img
-                                            src="assets/img/product/product6.jpg" alt=""></a>
-                                    <div class="action_links">
-
-                                    </div>
-                                </div>
-                                <figcaption class="product_content">
-                                    <div class="product_rating">
-                                        <ul>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details-pad.html"> No Smell Cellulose Cooling Pads     7060 5090 7090        For Greenhouse</a></h4>
+                                    <h4 class="product_name"><a :href=item.url>{{item.name}}</a></h4>
                                     <div class="price_box">
-                                        <span class="current_price">US$100~140/CBM</span>
-                                        <span class="old_price">$178.00</span>
+                                        <span class="current_price">$142.00</span>
+                                        <span class="old_price">$173.00</span>
                                     </div>
-                                   
-                                    
                                 </figcaption>
                             </figure>
                         </article>
                     </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <div class="label_product">
-                                        <span class="label_new">new</span>
-                                    </div>
-                                    <a class="primary_img" href="product-details-fan.html"><img
-                                            src="assets/img/product/product10.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details-fan.html"><img
-                                            src="assets/img/product/product14.jpg" alt=""></a>
-                                    <div class="action_links">
-                                        <ul>
-                                            <li class="quick_button"><a href="#" data-toggle="modal"
-                                                    data-target="#modal_box" title="quick view"> <i
-                                                        class="icon icon-Eye"></i></a></li>
-                                            <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                        class="icon icon-Heart"></i></a></li>
-                                            <li class="compare"><a href="#" title="Add to Compare"><i
-                                                        class="icon icon-MusicMixer"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content">
-                                    <div class="product_rating">
-                                        <ul>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                            <li><a href="#"><i class="icon icon-Star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="product_name"><a href="product-details-fan.html">Manufacturer Supply Price Centrifugal Push-Pull Exhaust Fan for Poultry Greenhouse</a></h4>
-                                    <div class="price_box">
-                                        <span class="current_price">US$100~140/CBM</span>
-                                       
-                                    </div>
-                                  
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
+                  
+                   
+                  <!-- // ===================================== -->
                 </div>
             </div>
         </div>
@@ -661,6 +505,8 @@
         </div>
     </div>
     <!--testimonial area end-->
+
+
 
     <!--blog area start-->
     <section class="blog_section">
@@ -861,11 +707,89 @@
         <!-- /.box -->
     </div>
     <!--news letter popup start-->
-
+</div>
 
 
     <!-- JS
 ============================================ -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+
+  const  products = [{
+    "name": "Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System",
+    "images": [
+        "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/11.jpg",
+        "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/27.jpg",
+        "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/31.jpg",
+        "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/32.jpg"
+    ],
+    "type": "fan",
+    "url": "product-details-fan.html?name=Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System&imgs=['assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/11.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/27.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/31.jpg', 'assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/32.jpg']"
+},
+{
+    "name": "Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan",
+    "images": [
+        "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/1.jpg",
+        "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/19.jpg",
+        "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/2.jpg",
+        "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/22.jpg"
+    ],
+    "type": "fan",
+    "url": "product-details-fan.html?name=Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan&imgs=['assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/1.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/19.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/2.jpg', 'assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/22.jpg']"
+},
+{
+    "name": "Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation",
+    "images": [
+        "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg",
+        "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg",
+        "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/24.jpg",
+        "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/29.jpg"
+    ],
+    "type": "fan",
+    "url": "product-details-fan.html?name=Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation&imgs=['assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/24.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/29.jpg']"
+}, {
+    "name": "Brown Evaporative Cooling Pad Wall for Greenhouse",
+    "images": [
+        "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/11.jpg",
+        "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/14.jpg",
+        "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/29.jpg",
+        "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/9.jpg"
+    ],
+    "type": "pad",
+    "url": "product-details-pad.html?name=Brown Evaporative Cooling Pad Wall for Greenhouse&imgs=['assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/11.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/14.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/29.jpg', 'assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/9.jpg']"
+},
+{
+    "name": "Colorful Evaporative Cooling Pad (Brown, Green and Black Color)",
+    "images": [
+        "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/17.jpg",
+        "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/18.jpg",
+        "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/19.jpg",
+        "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/24.jpg"
+    ],
+    "type": "pad",
+    "url": "product-details-pad.html?name=Colorful Evaporative Cooling Pad (Brown, Green and Black Color)&imgs=['assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/17.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/18.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/19.jpg', 'assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/24.jpg']"
+},
+{
+    "name": "Double Color Evaporative Cooling Pad for Greenhouse and Poultry",
+    "images": [
+        "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/1.jpg",
+        "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/36.png",
+        "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/8.jpg"
+    ],
+    "type": "pad",
+    "url": "product-details-pad.html?name=Double Color Evaporative Cooling Pad for Greenhouse and Poultry&imgs=['assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/1.jpg', 'assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/36.png', 'assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/8.jpg']"
+}];
+    // 使用httpVueLoader
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                product: products,
+                
+            }
+        }
+    })
+</script>
     <!--jquery min js-->
     <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
     <!--popper min js-->
