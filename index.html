@@ -331,8 +331,7 @@
                                   
                                     <h4 class="product_name"><a :href=item.url>{{item.name}}</a></h4>
                                     <div class="price_box">
-                                        <span class="current_price">$142.00</span>
-                                        <span class="old_price">$173.00</span>
+                                        <span class="current_price">{{item.price}}</span>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -712,8 +711,9 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script>
 
-  const  products = [{
+const  products = [{
     "name": "Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System",
+    "price":"110$~249$/set FOB qingdao",
     "images": [
         "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/11.jpg",
         "assets/img/s-product/fan/Big Airflow Ventilation Exhaust Fan for Greenhouse Air Cooling System/27.jpg",
@@ -725,6 +725,7 @@
 },
 {
     "name": "Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan",
+    "price":"110$~249$/set FOB qingdao",
     "images": [
         "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/1.jpg",
         "assets/img/s-product/fan/Chicken Farm Ventilation Centrifugal Push Pull Exhaust Fan/19.jpg",
@@ -736,6 +737,7 @@
 },
 {
     "name": "Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation",
+    "price":"110$~249$/set FOB qingdao",
     "images": [
         "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg",
         "assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg",
@@ -746,6 +748,7 @@
     "url": "product-details-fan.html?name=Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation&imgs=['assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/15.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/16.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/24.jpg', 'assets/img/s-product/fan/Direct Drive Swung Drop Hammer Exhaust Fan for Factory Workshop Warehouse Ventilation/29.jpg']"
 }, {
     "name": "Brown Evaporative Cooling Pad Wall for Greenhouse",
+    "price":"US$100~140/CBM, FOB Qingdao",
     "images": [
         "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/11.jpg",
         "assets/img/s-product/pad/Brown Evaporative Cooling Pad Wall for Greenhouse/14.jpg",
@@ -757,6 +760,7 @@
 },
 {
     "name": "Colorful Evaporative Cooling Pad (Brown, Green and Black Color)",
+    "price":"US$100~140/CBM, FOB Qingdao",
     "images": [
         "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/17.jpg",
         "assets/img/s-product/pad/Colorful Evaporative Cooling Pad (Brown, Green and Black Color)/18.jpg",
@@ -768,6 +772,7 @@
 },
 {
     "name": "Double Color Evaporative Cooling Pad for Greenhouse and Poultry",
+    "price":"US$100~140/CBM, FOB Qingdao",
     "images": [
         "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/1.jpg",
         "assets/img/s-product/pad/Double Color Evaporative Cooling Pad for Greenhouse and Poultry/36.png",
